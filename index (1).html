@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Snake Game</title>
+    <title>Sigma Snake Game</title>
     <style>
         body {
             text-align: center;
@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <h1>Snake Game</h1>
+    <h1>Sigma Snake Game</h1>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script>
         const canvas = document.getElementById("gameCanvas");
@@ -78,7 +78,7 @@
             ctx.fillStyle = "red";
             ctx.fillRect(apple.x, apple.y, grid - 1, grid - 1);
 
-            ctx.fillStyle = "green";
+            ctx.fillStyle = "blue";
             snake.cells.forEach(function (cell, index) {
                 ctx.fillRect(cell.x, cell.y, grid - 1, grid - 1);
 
